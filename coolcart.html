@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoolCart - বাংলাদেশি ড্রপশিপিং শপ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #00b894;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      background-color: #dff;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2d3436;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+    }
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      color: #636e72;
+      font-size: 14px;
+    }
+    .product button {
+      margin-top: 10px;
+      background-color: #0984e3;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #dfe6e9;
+      font-size: 14px;
+    }
+    .form-section {
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .form-section h2 {
+      text-align: center;
+    }
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-section input, .form-section button {
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-section button {
+      background-color: #00b894;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CoolCart</h1>
+    <p>আপনার অনলাইন শপিং পার্টনার</p>
+  </header>
+
+  <nav>
+    <a href="#">হোম</a>
+    <a href="#products">প্রোডাক্ট</a>
+    <a href="#login">লগইন</a>
+    <a href="#order">অর্ডার</a>
+  </nav>
+
+  <div class="container" id="products">
+    <div class="product">
+      <img src="https://i.ibb.co/0Xx6V4p/fan.jpg" alt="ফ্যান">
+      <h3>পোর্টেবল রিচার্জেবল ফ্যান</h3>
+      <p>৫০০০mAh ব্যাটারি, ডিজিটাল ডিসপ্লে সহ।</p>
+      <button onclick="document.getElementById('order').scrollIntoView()">অর্ডার করুন</button>
+    </div>
+    <div class="product">
+      <img src="https://i.ibb.co/d2m3g1F/lamp.jpg" alt="নাইট ল্যাম্প">
+      <h3>মাশরুম ফ্লাওয়ার ল্যাম্প</h3>
+      <p>অটো সেন্সর, মাল্টি কালার LED লাইট।</p>
+      <button onclick="document.getElementById('order').scrollIntoView()">অর্ডার করুন</button>
+    </div>
+  </div>
+
+  <div class="form-section" id="login">
+    <h2>লগইন করুন</h2>
+    <form>
+      <input type="email" placeholder="ইমেইল লিখুন" required>
+      <input type="password" placeholder="পাসওয়ার্ড" required>
+      <button type="submit">লগইন</button>
+    </form>
+  </div>
+
+  <div class="form-section" id="order">
+    <h2>অর্ডার ফর্ম</h2>
+    <form>
+      <input type="text" placeholder="আপনার নাম" required>
+      <input type="tel" placeholder="মোবাইল নম্বর" required>
+      <input type="text" placeholder="ঠিকানা" required>
+      <input type="text" placeholder="পছন্দের পণ্য (যেমন: ফ্যান)" required>
+      <button type="submit">অর্ডার কনফার্ম করুন</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; ২০২৫ CoolCart - বাংলাদেশি ড্রপশিপিং সাইট
+  </footer>
+</body>
+</html>
